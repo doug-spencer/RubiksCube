@@ -1,0 +1,8 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/colouredCubeNet.jpg","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/colouredCubeNet_0.xnb","TextureProcessor","Texture2DContent",57524,699189,0.6514312
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/Cube.fbx","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/Cube.xnb","ModelProcessor","ModelContent",16524,1655,0.1223374
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/highlightedMenuBox.jpg","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/highlightedMenuBox.xnb","TextureProcessor","Texture2DContent",15022,120085,0.0965789
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/menuBox.jpg","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/menuBox.xnb","TextureProcessor","Texture2DContent",14585,120085,0.0063839
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/onScreenText.spritefont","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/onScreenText.xnb","FontDescriptionProcessor","SpriteFontContent",2008,21538,0.0796723
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/TexturedCube.fbx","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/TexturedCube.xnb","ModelProcessor","ModelContent",19868,1672,0.6612205
+"C:/Users/dougl/Documents/gitHub/RubiksCube/Content/timerText.spritefont","C:/Users/dougl/Documents/gitHub/RubiksCube/Content/bin/DesktopGL/Content/timerText.xnb","FontDescriptionProcessor","SpriteFontContent",2008,267298,0.0600118
