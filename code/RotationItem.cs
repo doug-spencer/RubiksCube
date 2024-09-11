@@ -15,7 +15,7 @@ namespace RubiksCube
         public string axis;
         public int plane;
         public string name;
-        public int direction;//0 for acw 1 for cw
+        public int direction; //0 for acw 1 for cw
 
         public RotationItem(string name, string axis, int plane, int direction)
         {

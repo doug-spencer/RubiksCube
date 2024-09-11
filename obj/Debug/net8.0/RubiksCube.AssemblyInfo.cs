@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RubiksCube")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5635a7b9bf4e65c5321093e9366de75602046379")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cab39a114d9cd13eb71735e2fdc328a92418e079")]
 [assembly: System.Reflection.AssemblyProductAttribute("RubiksCube")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RubiksCube")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

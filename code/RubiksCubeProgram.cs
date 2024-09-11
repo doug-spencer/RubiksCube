@@ -44,8 +44,8 @@ namespace RubiksCube
         
         protected override void Initialize()
         {
-            this.IsMouseVisible = true;
             //keeps mouse visible on screen
+            this.IsMouseVisible = true;
             base.Initialize();
         }
 
@@ -80,11 +80,6 @@ namespace RubiksCube
             myVisualCube = new VisualCube(subMenu);
             myVisualCube.createQBs(model);
             myVisualCube.createRotations();
-
-            
-            
-            
-
             
             foreach (var mesh in model.Meshes)
             {
@@ -93,7 +88,6 @@ namespace RubiksCube
                     effect.View = Matrix.CreateLookAt(cameraPosition, cameraLookAtVector, cameraUpVector);
                     float aspectRatio = graphics.PreferredBackBufferWidth / (float)graphics.PreferredBackBufferHeight;
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(fieldOfView, aspectRatio, nearClipPlane, farClipPlane);
-                    //creates the 'scene
                 }
             }
             
@@ -121,9 +115,6 @@ namespace RubiksCube
                 timerMessage = "";
             }
             menu.update(mouseState);
-            
-
-            
 
             base.Update(gameTime); 
         }
@@ -140,19 +131,16 @@ namespace RubiksCube
 
             spriteBatch.End();
 
+            //Stops the cube being see through 
             DepthStencilState dss = new DepthStencilState();
             dss.DepthBufferEnable = true;
             GraphicsDevice.DepthStencilState = dss;
-            //Stops the cube being see through 
 
 
             if (menu.menuItemList[0].selected == true)
             {
                 myVisualCube.Draw(graphics, spriteBatch, font);
             }
-
-
-            
             
             base.Draw(gameTime);
         }

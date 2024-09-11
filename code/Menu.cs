@@ -16,7 +16,6 @@ namespace RubiksCube
 
         public Texture2D highligtedBox;
         public Texture2D box;
-        Vector2 drawTextTo;
         bool withinBoxBoundary = false;
         bool mousePressed = false;
         int indexOfSelectedItem;

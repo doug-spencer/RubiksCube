@@ -27,8 +27,7 @@ namespace RubiksCube
 
         }
 
-        //train is responsible for sending the expected and observed value and running the algorighm...
-        //...that updates the weights accordingly
+        //train is responsible for sending the expected and observed value and running the algorighm that updates the weights accordingly
         public float train(float[] inputs, float[] expectedOutput)
         {
             float cost = 0;
@@ -40,8 +39,7 @@ namespace RubiksCube
         }
 
 
-        //example error computes the difference between the (observed - expected)^2 and was useful in understanding the...
-        //... network but is not used in the final program
+        //example error computes (observed - expected)^2 and was useful in understanding the network but is not used in the final program
         public float exampleError(float[] observedOutput, float[] expectedOutput)
         {
             float addcost = 0;
@@ -67,8 +65,7 @@ namespace RubiksCube
         }
 
 
-        //iterates backwards through the layers running the method for backpropogation...
-        //...until the first layer is reached
+        //iterates backwards through the layers running the method for backpropogation until the first layer is reached
         //runs updateWeights method for each layer
         public void BackPropogation(float[] expectedOutput)
         {
@@ -137,24 +134,20 @@ namespace RubiksCube
             //populates each value of the weights matrix with a random double between 0 and 1
             public void initialiseWeights()
             {
-                //Console.WriteLine("new layers initial eights");//test 1
                 for (int i = 0; i < numOfOutputs; i++)
                 {
                     for (int j = 0; j < numOfInputs; j++)
                     {
                         weights[i, j] = (float)rnd.NextDouble();
 
-                        //Console.WriteLine(weights[i, j].ToString());//test 1
                     }
                 }
-                //Console.WriteLine("end of this layers weights");//test 1
             }
 
             
             public float[] FeedForwardLayer(float[] inputs)
             {
                 this.inputs = inputs;
-                //calculates each neuron of the next layer by taking a weighted sum of the values in the layer
                 for (int i = 0; i < numOfOutputs; i++)
                 {
                     beforeActivation[i] = 0;
@@ -163,7 +156,6 @@ namespace RubiksCube
                         beforeActivation[i] += (inputs[j]) * weights[i, j];
                     }
 
-                    //runs this weighted sum through an activation function
                     outputs[i] = activation(beforeActivation[i]);
                 }
                 
@@ -258,17 +250,6 @@ namespace RubiksCube
                 }
             }
 
-
-            
-
-            public void testRelu()//test 2
-            {
-                Console.WriteLine();
-                Console.WriteLine(activation(5));
-                Console.WriteLine(activation(-5));
-                Console.WriteLine(activationDer(5));
-                Console.WriteLine(activationDer(-5));
-            }
         }
     }
 }

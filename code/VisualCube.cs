@@ -52,40 +52,6 @@ namespace RubiksCube
             myDAVI.run();
             stopwatch.Start();
 
-            //testingObjs();
-        }
-
-        public void testingObjs()//testing
-        {
-
-
-            
-
-            //DNN testDNN = new DNN(new int[3] { 2, 4, 1 }, 0.04f);
-
-            //Console.WriteLine(testDNN.FeedForward(new float[2] { 2, 4 })[0].ToString());//test 3
-
-            ////test 4
-            //for (int i = 0; i < 1000; i++)
-            //{
-            //    testDNN.train(new float[2] { 0, 0 }, new float[1] { 0 });
-            //    testDNN.train(new float[2] { 1, 0 }, new float[1] { 1 });
-            //    testDNN.train(new float[2] { 0, 1 }, new float[1] { 1 });
-            //    testDNN.train(new float[2] { 1, 1 }, new float[1] { 0 });
-            //}
-            //Console.WriteLine(testDNN.FeedForward(new float[2] { 0, 0 })[0].ToString());
-            //Console.WriteLine(testDNN.FeedForward(new float[2] { 1, 0 })[0].ToString());
-            //Console.WriteLine(testDNN.FeedForward(new float[2] { 0, 1 })[0].ToString());
-            //Console.WriteLine(testDNN.FeedForward(new float[2] { 0, 0 })[0].ToString());
-
-
-
-            //solvedCube.printCubeRepresentation(); //test 5
-            //solvedCube.printStateRepresentation(); //test 6
-
-            solvedCube.ninetyCW(1);//test 7
-            solvedCube.printCubeRepresentation();
-            solvedCube.printStateRepresentation();
         }
 
         public void Update(KeyboardState previousKey, KeyboardState currentKey, MouseState mouseState)
@@ -175,7 +141,6 @@ namespace RubiksCube
 
 
             //responsible for the rotations queue
-            //complex
             if (rotationsQueue.Count != 0)
             {
                 RotationItem frontOfQueue = rotationsQueue.Peek();//selects the first item in the queue
@@ -238,7 +203,7 @@ namespace RubiksCube
                     break;
             }
 
-            //work in progress - not used in current program
+            //work in progress
             //Queue<int> movvvess;
             //movvvess = myDAVI.aStarSolve(myCube);
             //while(movvvess.Count != 0)
@@ -322,7 +287,6 @@ namespace RubiksCube
             }
 
             
-            //complex algorithm
             //alters the position and orientation of each cubie based on the rotation that is in progress
             public void Update(RotationItem currentRotation, int rotationVelocity)
             {
@@ -332,8 +296,8 @@ namespace RubiksCube
                     case "x":
                         if (drawPosition.X == currentRotation.plane)// selects the cubies which lie in that plane
                         {
-                            drawPosition = MatVecMul(Matrix.CreateRotationX(MathHelper.ToRadians(d * rotationVelocity)), drawPosition);//uses linear algebra to alter the position
-                            drawOrientation *= Matrix.CreateRotationX(MathHelper.ToRadians(d * rotationVelocity));//uses linear algebra to alter the orientation
+                            drawPosition = MatVecMul(Matrix.CreateRotationX(MathHelper.ToRadians(d * rotationVelocity)), drawPosition);
+                            drawOrientation *= Matrix.CreateRotationX(MathHelper.ToRadians(d * rotationVelocity));
                         }
                         break;
 
