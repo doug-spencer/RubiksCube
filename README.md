@@ -19,10 +19,10 @@
 
 As part of a wider application, this project implements a Rubik's Cube solver inspired by the algorithms and methodologies from the 2019 paper, Solving the Rubik's Cube with Deep Reinforcement Learning and Search (Agostinelli et al., 2019).
 
+Motivated by a desire to more deeply understand the mechanics of training deep neural networks and applying reinforcement learning techniques, I opted to build the neural network and backpropagation trainer **from scratch**. While this approach sacrifices efficiency, it showcases a reinforcement algorithm built from the ground up.
 
 Currently, the solver is capable of solving Rubik's Cubes scrambled up to 6 moves, with plenty of room for further optimization and development. Despite its rudimentary implementation, the solver showcases the power of the Deep Approximate Value Iteration algorithm in an engaging, interactive way.
 
-Motivated by a desire to more deeply understand the mechanics of training deep neural networks and applying reinforcement learning techniques, I opted to build the neural network and backpropagation trainer **from scratch**. While this approach sacrifices efficiency, it showcases a reinforcement algorithm built from the ground up.
 ## ⬇️ Setup
 
 Windows + [Monogame 3.8.2](https://docs.monogame.net/articles/whats_new.html) + [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet)
