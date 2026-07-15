@@ -39,5 +39,5 @@ Windows + [Monogame 3.8.2](https://docs.monogame.net/articles/whats_new.html) + 
 1. Agostinelli, F., McAleer, S., Shmakov, A., & Baldi, P. (2019). Solving the Rubik’s cube with deep reinforcement learning and search. *Nature Machine Intelligence*, 1(8), 356–363. Springer Science and Business Media LLC. DOI: [10.1038/s42256-019-0070-z](https://doi.org/10.1038/s42256-019-0070-z)
 [![DOI:10.1038/s42256-019-0070-z](https://zenodo.org/badge/DOI/10.1038/s42256-019-0070-z.svg)](https://www.nature.com/articles/s42256-019-0070-z)
 
-> Email [douglasgspencer@gmail.com](douglasgspencer@gmail.com) &nbsp;&middot;&nbsp;
+> Email [contact@douglas-spencer.co.uk](contact@douglas-spencer.co.uk) &nbsp;&middot;&nbsp;
 > GitHub [@doug-spencer](https://github.com/doug-spencer) &nbsp;&middot;&nbsp;
